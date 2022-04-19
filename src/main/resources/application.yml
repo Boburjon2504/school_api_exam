@@ -1,0 +1,24 @@
+jwt:
+  secretKey: SupperKey
+  expireTime: 86400000
+server:
+  port: 8080
+  error:
+    include-message: always
+spring:
+  swagger-ui:
+    /swagger/json
+  sql:
+    init:
+      mode: always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 250407
+    url: jdbc:postgresql://localhost:5432/maktab_api
+
+
